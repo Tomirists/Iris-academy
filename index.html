@@ -531,52 +531,49 @@
                 align-items: flex-start;
             }
         }
-        /* PARTNERS MARQUEE */
+/* PARTNERS MARQUEE */
 
 .partners-marquee {
     width: 100%;
     overflow: hidden;
-    background: white;
+    background: #ffffff;
     border-top: 1px solid #E8E5F2;
     border-bottom: 1px solid #E8E5F2;
-    padding: 20px 0;
+    padding: 18px 0;
 }
 
 .partners-track {
     display: flex;
     width: max-content;
-    animation: partners-scroll 22s linear infinite;
+    animation: partners-scroll 18s linear infinite;
 }
 
 .partner-item {
-    display: flex;
-    align-items: center;
+    flex-shrink: 0;
     white-space: nowrap;
-    padding: 0 45px;
+    padding: 0 35px;
+    color: #5A4FCF;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1.5px;
-    color: #5A4FCF;
     text-transform: uppercase;
 }
 
 .partner-item::after {
     content: "✦";
-    margin-left: 90px;
+    margin-left: 70px;
     color: #C8C1EE;
 }
 
 @keyframes partners-scroll {
-    from {
+    0% {
         transform: translateX(0);
     }
 
-    to {
+    100% {
         transform: translateX(-50%);
     }
 }
-        
-    </style>
     
 </head>
 
