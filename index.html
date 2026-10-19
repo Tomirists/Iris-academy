@@ -531,7 +531,53 @@
                 align-items: flex-start;
             }
         }
+        /* PARTNERS MARQUEE */
+
+.partners-marquee {
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    border-top: 1px solid #E8E5F2;
+    border-bottom: 1px solid #E8E5F2;
+    padding: 20px 0;
+}
+
+.partners-track {
+    display: flex;
+    width: max-content;
+    animation: partners-scroll 22s linear infinite;
+}
+
+.partner-item {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0 45px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #5A4FCF;
+    text-transform: uppercase;
+}
+
+.partner-item::after {
+    content: "✦";
+    margin-left: 90px;
+    color: #C8C1EE;
+}
+
+@keyframes partners-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+        
     </style>
+    
 </head>
 
 <body>
@@ -620,6 +666,49 @@
     </div>
 
 </header>
+    <!-- PARTNERS MARQUEE -->
+
+<div class="partners-marquee">
+
+    <div class="partners-track">
+
+        <div class="partner-item">
+            OUR PARTNERS
+        </div>
+
+        <div class="partner-item">
+            AlumniHU
+        </div>
+
+        <div class="partner-item">
+            МФЦА / AIFC
+        </div>
+
+        <div class="partner-item">
+            Yourt by BI Group
+        </div>
+
+        <!-- повтор для бесконечной анимации -->
+
+        <div class="partner-item">
+            OUR PARTNERS
+        </div>
+
+        <div class="partner-item">
+            AlumniHU
+        </div>
+
+        <div class="partner-item">
+            МФЦА / AIFC
+        </div>
+
+        <div class="partner-item">
+            Yourt by BI Group
+        </div>
+
+    </div>
+
+</div>
 
 
 <!-- PROGRAMS -->
